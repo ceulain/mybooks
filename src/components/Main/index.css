@@ -1,5 +1,11 @@
 main {
     flex-basis: 100%;
     overflow: auto;
+    padding: 16px;
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+
+    max-width: 1200px;
 }
