@@ -1,10 +1,10 @@
 import books from "../../data/books";
 import Card from "../Card";
-import "./index.css";
+import styles from "./index.module.css";
 
 const Main = () => {
   return (
-    <main>
+    <main className={styles.main}>
       {books.map((book) => {
         return <Card {...book} />;
       })}

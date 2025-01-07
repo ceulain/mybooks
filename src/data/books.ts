@@ -1,6 +1,6 @@
 import { Book } from "./types";
 
-const Books: Book[] = [
+const books: Book[] = [
   {
     airId: "rec4J5mqVxBifZ2uf",
     author: "Bruno David",
@@ -26137,4 +26137,4 @@ const Books: Book[] = [
   },
 ];
 
-export default Books;
+export default books;
