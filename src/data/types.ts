@@ -41,3 +41,22 @@ export type Book = {
   status?: string;
   skip?: boolean;
 };
+
+export enum Category {
+  SCIENCES_AND_TECHNOLOGIES = "Sciences et technologies",
+  LITTERATURE = "Litterature",
+  PHILOSOPHY = "Philosophie",
+  SOCIOLOGY = "Sociologie",
+  ARTS_AND_STYLE_OF_LIFE = "Arts et style de vie",
+  HISTORY = "Histoire",
+  PSYCHOLOGY = "Psychologie",
+  POLITIC = "Politique",
+  MYTHOLOGIES = "Mythologies, contes et légendes",
+  EDUCATIOB = "Éducation",
+  GEPOLITIC = "Géopolitique",
+  RELIGION = "Religion",
+  DROIT = "Droit",
+  SCIENCE_FICTION = "Science-fiction",
+  GEOGRAPHY = "Géographie",
+  ECONOMY = "économie",
+}
