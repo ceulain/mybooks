@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import initBooks from "../../data/books";
 import { Category } from "../../data/types";
+import useSetBooks from "../../hooks/useSetBooks";
 import Card from "../Card";
 import styles from "./index.module.css";
 
@@ -9,23 +10,7 @@ const Main = () => {
   const [choosenCategory, setChosenCategory] = useState<Category>();
   const url = window.location;
 
-  useEffect(() => {
-    const urlSearchParams = new URLSearchParams(url.search);
-
-    if (urlSearchParams.has("category")) {
-      const category = urlSearchParams.get("category");
-
-      if (category) {
-        setChosenCategory(category as Category);
-
-        setBooks(
-          initBooks.filter((book) => book.categories.includes(category))
-        );
-      } else {
-        setBooks(initBooks);
-      }
-    }
-  }, [url.search]);
+  useSetBooks(url, setChosenCategory, setBooks);
 
   const onClick = (category: Category) => {
     const urlSearchParams = new URLSearchParams(url.search);
