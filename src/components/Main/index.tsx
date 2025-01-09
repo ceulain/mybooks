@@ -16,6 +16,8 @@ const Main = () => {
       const category = urlSearchParams.get("category");
 
       if (category) {
+        setChosenCategory(category as Category);
+
         setBooks(
           initBooks.filter((book) => book.categories.includes(category))
         );
