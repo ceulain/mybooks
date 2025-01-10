@@ -3,6 +3,7 @@ import initBooks from "../../data/books";
 import { Category } from "../../data/types";
 import useSetBooks from "../../hooks/useSetBooks";
 import Card from "../Card";
+import Pagination from "../Pagination";
 import styles from "./index.module.css";
 
 const Main = () => {
@@ -47,6 +48,7 @@ const Main = () => {
           return <Card {...book} key={book.airId} />;
         })}
       </main>
+      <Pagination />
     </>
   );
 };
