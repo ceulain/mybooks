@@ -44,7 +44,7 @@ export type Book = {
 
 export enum Category {
   SCIENCES_AND_TECHNOLOGIES = "Sciences et technologies",
-  LITTERATURE = "Litterature",
+  LITTERATURE = "Littérature",
   PHILOSOPHY = "Philosophie",
   SOCIOLOGY = "Sociologie",
   ARTS_AND_STYLE_OF_LIFE = "Arts et style de vie",
