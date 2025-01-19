@@ -1,7 +1,7 @@
 import Card from "../../components/Card";
 import books from "../../data/books";
 
-const SciencesAndTechnologies = () => {
+const Books = () => {
   const filteredBooks = books.filter((book) => {
     return book.categories.includes("Sciences et technologies");
   });
@@ -17,4 +17,4 @@ const SciencesAndTechnologies = () => {
   );
 };
 
-export default SciencesAndTechnologies;
+export default Books;
